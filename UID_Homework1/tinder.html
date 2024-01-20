@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Multilanuage encoding -->
     <meta charset="UTF-8">
-    <!-- Scaleable to device-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Tab Title-->
     <title>Tinder</title>
     <style>
         body {
@@ -15,6 +12,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            font-size: 1.5em; /* Use relative units */
         }
         hr {
             height: 1px;
@@ -22,58 +20,60 @@
             border: none;
         }
         h3 {
-            font-size: x-large;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             color: black;
         }
-        .profile {
-            display: block;
+        p {
+            color: gray;
         }
-        .profile_box{
-            border-radius: 15px; /* You can adjust the value to control the roundness */
+        .phone {
+            display: flex; /* Use flex for flexible layout */
+            flex-direction: column;
+            align-items: center;
+        }
+        .profile_box {
+            border-radius: 15px;
             margin: auto;
             outline: auto rgb(243, 243, 243);
             text-align: left;
+
         }
         .light_container {
             background-color: darkgray;
-            color: white; 
-            padding: 1%;
-            border-radius: 15px; /* You can adjust the value to control the roundness */
-            width: 50%; /* Set the width to a percentage of the parent container */
-            margin: auto; /* Center the container horizontally */
+            color: white;
+            padding: 2%; 
+            border-radius: 5vw; 
+            width: 60%; 
+            margin: auto;
         }
-
         .light_container img {
-            max-width: 10%; /* The image will not exceed the width of its container */
-            max-height: 10%; /* The image will not exceed the height of its container */
+            max-width: 15%; 
+            max-height: 15%;
             vertical-align: middle;
         }
-
         .rounded-corner {
             text-align: center;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
         }
-
     </style>
 </head>
 <body>
-    <div class="header">
+    <div class="phone"> 
         <img src="http://coms4170.cs.columbia.edu/2019-spring/assignments/hw2/tinder_images/tinder_logo.png">
-    </div>
-    <div class="profile">
-        <hr> 
-        <br>
-        <div class="profile_box">
-            <img src="http://coms4170.cs.columbia.edu/2019-spring/assignments/hw2/tinder_images/tinder_person.png" class="rounded-corner">
-            <h3>Sean Rad, 29<img src="http://coms4170.cs.columbia.edu/2019-spring/assignments/hw2/tinder_images/tinder_verified.png" ></h3> 
-            <p>Varified</p>    
+        <div class="profile">
+            <hr> 
+            <br>
+            <div class="profile_box">
+                <img src="http://coms4170.cs.columbia.edu/2019-spring/assignments/hw2/tinder_images/tinder_person.png" class="rounded-corner">
+                <h3>&ensp;Sean Rad, 29<img src="http://coms4170.cs.columbia.edu/2019-spring/assignments/hw2/tinder_images/tinder_verified.png" ></h3> 
+                <p>&ensp;Verified</p>    
+            </div>
+        </div>  
+        <div class="light_container">
+            <img src="http://coms4170.cs.columbia.edu/2019-spring/assignments/hw2/tinder_images/heart.png"> 
+            <span ><strong> Like Me on Tinder</strong></span>
         </div>
     </div>  
-    <div class="light_container">
-        <img src="http://coms4170.cs.columbia.edu/2019-spring/assignments/hw2/tinder_images/heart.png"> 
-        <span style="">Like Me on Tinder.</span>
-    </div>
 </body>
 </html>
